@@ -1,4 +1,113 @@
-*{
-  padding:0;
-  margin:0;
+@font-face {
+  font-family: "japanes";
+  src: url(/assets/fonts/HIROMISAKE.ttf);
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(68, 68, 68);
+  display: grid;
+  grid-template-areas: "left center right";
+  grid-template-columns: 74px 1fr 74px;
+  grid-template-rows: 100px;
+  height: 100px;
+  width: 100%;
+}
+
+.left {
+  grid-area: left;
+}
+
+.center {
+  grid-area: center;
+  display: grid;
+  grid-template-columns: 250px 887px 251px;
+  grid-template-rows: 16.6625px 16.6625px 16.6625px 16.6625px 16.6625px 16.6625px;
+  /* background-color: aliceblue; */
+}
+
+.right {
+  grid-area: right
+}
+
+.hdr_upcontanier {
+  /* background-color: blue; */
+  grid-row: 1/3;
+  grid-column: 1/4;
+  display: flexbox;
+}
+
+.hdr_logo {
+  /* background-color: brown; */
+  grid-row: 3/7;
+  grid-column: 1/2;
+}
+
+.hdr_serchbar{
+  /* background-color: rgb(111, 255, 0); */
+  grid-row: 3/7;
+  grid-column: 2/3;
+}
+.hdr_account{
+  /* background-color: darkmagenta; */
+  grid-row: 3/7;
+  grid-column: 3/4;
+}
+
+#mainlogo{
+  /* background-color: aqua; */
+  width: 250px;
+  height: 50px;
+  margin-top: 9px;
+
+}
+.hdr_divivder{
+  background-color: aliceblue;
+  height: 1px;
+  grid-row: 3/3;
+  grid-column: 1/4;
+}
+
+.hdr_serchbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width:610px;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+}
+
+.serch{
+  display: flex;
+}
+#searchfieldinput{
+  border-radius: 10px;
+  width: 580px;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+.magnifying_icon {
+  background-color: rgba(0,198,255,255);
+  height: 30px; /* Set the height of the container */
+  width: 40px;  /* Set the width of the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#magnifying {
+  height: 20px; /* Set the size of the magnifying icon */
+  width: 20px;  /* Adjust the width of the magnifying icon */
 }
