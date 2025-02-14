@@ -3,6 +3,11 @@
   src: url(/assets/fonts/HIROMISAKE.ttf);
 }
 
+@font-face {
+  font-family: "LEMONMILK";
+  src: url(/assets/fonts/LEMONMILK-Medium.otf);
+}
+
 
 * {
   padding: 0;
@@ -28,7 +33,6 @@ header {
   display: grid;
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: 16.6625px 16.6625px 16.6625px 16.6625px 16.6625px 16.6625px;
-  /* background-color: aliceblue; */
 }
 
 .right {
@@ -36,70 +40,85 @@ header {
 }
 
 .hdr_upcontanier {
-  /* background-color: blue; */
   grid-row: 1/3;
   grid-column: 1/4;
-  display: flexbox;
+  display: flex;
+  align-items: center;
+  font-family: "LEMONMILK";
+  color: rgb(212, 212, 212);
+  font-size: 12px;
+}
+
+.text {
+  display: flex;
+  margin-left: 50px;
+}
+
+.text-p {
+  margin-left: 4px;
 }
 
 .hdr_logo {
-  /* background-color: brown; */
   grid-row: 3/7;
   grid-column: 1/2;
 }
 
-.hdr_serchbar{
-  /* background-color: rgb(111, 255, 0); */
+.hdr_serchbar {
   grid-row: 3/7;
   grid-column: 2/3;
 }
-.hdr_account{
-  /* background-color: darkmagenta; */
+
+.hdr_account {
   grid-row: 3/7;
   grid-column: 3/4;
 }
 
-#mainlogo{
-  /* background-color: aqua; */
+#mainlogo {
   width: 250px;
   height: 50px;
   margin-top: 9px;
 
 }
-.hdr_divivder{
+
+.hdr_divivder {
   background-color: aliceblue;
   height: 1px;
   grid-row: 3/3;
   grid-column: 1/4;
 }
 
-.hdr_serchbar{
+.hdr_serchbar {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.container{
-  width:610px;
+
+.container {
+  width: 610px;
   height: 30px;
   background-color: white;
   border-radius: 5px;
   display: flex;
 }
 
-.serch{
+.serch {
   display: flex;
 }
-#searchfieldinput{
+
+#searchfieldinput {
   border-radius: 10px;
   width: 580px;
   height: 30px;
   border: none;
   outline: none;
 }
+
 .magnifying_icon {
-  background-color: rgba(0,198,255,255);
-  height: 30px; /* Set the height of the container */
-  width: 40px;  /* Set the width of the container */
+  background-color: rgba(0, 198, 255, 255);
+  height: 30px;
+  /* Set the height of the container */
+  width: 40px;
+  /* Set the width of the container */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,6 +127,52 @@ header {
 }
 
 #magnifying {
-  height: 20px; /* Set the size of the magnifying icon */
-  width: 20px;  /* Adjust the width of the magnifying icon */
+  height: 20px;
+  /* Set the size of the magnifying icon */
+  width: 20px;
+  /* Adjust the width of the magnifying icon */
 }
+
+.hdr_account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 150px;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.account-text {
+  font-family: "LEMONMILK";
+  color: white;
+  margin-right: 8px;
+  font-size: large;
+}
+
+.nother-logos {
+  margin-right: 0px;
+}
+
+.shop-logo {
+  margin-left: 25px;
+}
+#heart{
+color: white;
+}
+
+#heart:hover{
+ color: rgba(0,198,255,255); 
+}
+
+#shopping-cart{
+  color: white;
+  }
+  
+  #shopping-cart:hover{
+   color: rgba(0,198,255,255); 
+  }
