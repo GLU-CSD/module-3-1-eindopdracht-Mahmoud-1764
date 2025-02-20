@@ -22,81 +22,147 @@
 </head>
 
 <body>
-  <header>
-    <div class="left"></div>
-    <div class="center">
-      <div class="hdr_upcontanier">
-        <div class="text">
-          <div class="logo"><i class='fas fa-shipping-fast' style='font-size:12px;color:rgba(0,198,255,255)'></i></div>
-          <div class="text-p">
-            <p>Express delivery</p>
+  <section id="header">
+    <header>
+      <div class="left"></div>
+      <div class="center">
+        <div class="hdr_upcontanier">
+          <div class="text">
+            <div class="logo"><i class='fas fa-shipping-fast' style='font-size:12px;color:rgba(0,198,255,255)'></i>
+            </div>
+            <div class="text-p">
+              <p>Express delivery</p>
+            </div>
           </div>
-        </div>
-        <div class="text">
-          <div class="logo"><i class='fas fa-clock' style='font-size:12px;color:rgba(0,198,255,255)'></i></div>
-          <div class="text-p">
-            <p>Open 24/7 - Always Here for You!</p>
+          <div class="text">
+            <div class="logo"><i class='fas fa-clock' style='font-size:12px;color:rgba(0,198,255,255)'></i></div>
+            <div class="text-p">
+              <p>Open 24/7 - Always Here for You!</p>
+            </div>
           </div>
-        </div>
-        <div class="text">
-          <div class="logo"><i class='fas fa-bolt' style='font-size:12px;color:rgba(0,198,255,255)'></i></div>
-          <div class="text-p">
-            <p>Powering Your PC Experience with Premium Components.</p>
+          <div class="text">
+            <div class="logo"><i class='fas fa-bolt' style='font-size:12px;color:rgba(0,198,255,255)'></i></div>
+            <div class="text-p">
+              <p>Powering Your PC Experience with Premium Components.</p>
+            </div>
           </div>
-        </div>
-        <div class="text">
-          <div class="logo"><i class='fas fa-shield-alt' style='font-size:12px;color:rgba(0,198,255,255)'></i></div>
-          <div class="text-p">
-            <p>Your Privacy, Our Priority – 100% Safe Transactions!</p>
+          <div class="text">
+            <div class="logo"><i class='fas fa-shield-alt' style='font-size:12px;color:rgba(0,198,255,255)'></i></div>
+            <div class="text-p">
+              <p>Your Privacy, Our Priority – 100% Safe Transactions!</p>
+            </div>
           </div>
-        </div>
 
-      </div>
-      <div class="hdr_divivder"></div>
-      <div class="hdr_logo">
-        <img src="/assets/img/logo_00000.png" alt="mainlogo" id="mainlogo" />
-      </div>
-      <div class="hdr_serchbar">
-        <div class="container">
-          <div class="serch">
-            <form>
-              <input type="search" id="searchfieldinput" placeholder="Search here">
-            </form>
-          </div>
-          <div class="magnifying_icon">
-            <img src="/assets/img/Magnifying_icon.png" alt="zoeken" id="magnifying" />
+        </div>
+        <div class="hdr_divivder"></div>
+        <div class="hdr_logo">
+          <img src="/assets/img/logo_00000.png" alt="mainlogo" id="mainlogo" />
+        </div>
+        <div class="hdr_serchbar">
+          <div class="container">
+            <div class="serch">
+              <form>
+                <input type="search" id="searchfieldinput" placeholder="Search here">
+              </form>
+            </div>
+            <div class="magnifying_icon">
+              <img src="/assets/img/Magnifying_icon.png" alt="zoeken" id="magnifying" />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="hdr_account">
-        <div class="account">
-          <div class="account-text">
-            <p>Account</p>
+        <div class="hdr_account">
+          <div class="account">
+            <div class="account-text">
+              <p>Account</p>
+            </div>
+            <div class="account-logo">
+              <i class='fas fa-user-alt' style='font-size:24px;color:rgb(255, 255, 255)'></i>
+            </div>
           </div>
-          <div class="account-logo">
-            <i class='fas fa-user-alt' style='font-size:24px;color:rgb(255, 255, 255)'></i>
+          <div class="nother-logos"></div>
+          <div class="heard-logo"><a href="">
+              <i class='fas fa-heart' style='font-size:24px' id="heart"></i>
+            </a>
           </div>
-        </div>
-        <div class="nother-logos"></div>
-        <div class="heard-logo"><a href="">
-            <i class='fas fa-heart' style='font-size:24px' id="heart"></i>
-          </a>
-        </div>
-        <div class="shop-logo">
-          <a href="">
-            <i class='fas fa-shopping-cart' style='font-size:24px' id="shopping-cart"></i>
-          </a>
+          <div class="shop-logo">
+            <a href="">
+              <i class='fas fa-shopping-cart' style='font-size:24px' id="shopping-cart"></i>
+            </a>
 
+          </div>
+        </div>
+      </div>
+      <div class="right"></div>
+    </header>
+  </section>
+  <section id="categorie-nav">
+    <div class="cat-container">
+      <div class="categorie">
+        <a href="">
+          Pcs
+        </a>
+      </div>
+      <div class="categorie">
+        <a href="">
+          Monitors
+        </a>
+      </div>
+      <div class="categorie">
+        <a href="">
+          RTX
+        </a>
+      </div>
+      <div class="categorie">
+        <a href="">
+          Laptops
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="main-container">
+    <div class="side_nav">
+      <div class="speceidication">
+        <div class="Max-Min">
+          <h2>Price Range</h2>
+          <p>Use Slider or enter Price</p>
+          <div class="price-input">
+            <div class="field">
+              <span>Min</span>
+              <input type="number" class="input-min">
+            </div>
+            <div class="sparator">-</div>
+            <div class="field">
+              <span>Max</span>
+              <input type="number" class="input-Max">
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="progress"></div>
         </div>
       </div>
     </div>
-    <div class="right"></div>
-  </header>
-
-
-
-
-  <div class="main">
+    <div class="main">
+      <div class="product-container">
+        <div class="Naame-product">
+          <div class="text">
+            <p>GeForce RTX™ 5090 32G GAMING TRIO OC</p>
+          </div>
+          <div class="between"></div>
+        </div>
+        <div class="photo-product"><img src="/assets/img/RTX5090.png" alt="RTX5090"></div>
+        <div class="specofocation-product">
+          <div class="text-specofocation1">test</div>
+          <div class="text-specofocation2">test</div>
+          <div class="text-specofocation1">test</div>
+          <div class="text-specofocation2">test</div>
+          <div class="text-specofocation1">test</div>
+          <div class="text-specofocation2">test</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
   </div>
   <script src="assets/js/app.js"></script>
 </body>
