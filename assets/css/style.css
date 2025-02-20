@@ -243,12 +243,13 @@ header {
 .main-container {
   display: flex;
   height: auto;
+  width: 100%;
 }
 
 .side_nav {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   background-color: rgb(68, 68, 68);
   width: 260px;
   height: 900;
@@ -264,6 +265,7 @@ header {
   color: white;
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 .Max-Min{
@@ -353,20 +355,18 @@ input[type="number"]::-webkit-outer-spin-button {
   align-items: center;
   flex-wrap: wrap;
   padding-bottom: 10px;
-  background-color: brown;
 }
 
-.product-container {
+#product-container {
   margin-top: 50px;
-  width: 80%;
+  width: 1000px;
   height: 280px;
   display: flex;
   flex-wrap: wrap;
-  background-color: blue;
 }
 .Naame-product{
   width: 100%;
-  height: 40px;
+  height: 39px;
   display: flex;
   align-items: end;
   flex-wrap: wrap;
@@ -384,19 +384,21 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .photo-product{
   width: 300px;
-  height: 240px;
+  height: 239px;
 }
 .photo-product img{
   width: 100%;
   height: 100%;
 }
 .specofocation-product{
-  background-color: rgb(255, 0, 0);
-  width: 704px;
-  height: 280;
+  width: 700px;
+  height: 279;
   display: flex;
   flex-wrap: wrap;
-
+}
+.end-line{
+  height: 1px;
+  background-color: black;
 }
 .betweenphoto-product{
   width: 1px;
@@ -404,12 +406,12 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: black;
 }
 .text-specofocation1{
-  background-color: aqua;
+  background-color:   rgba(172, 172, 172, 0.173);
   width: 100%;
   height: 40px;
 }
 .text-specofocation2{
-  background-color: rgb(208, 255, 0);
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 40px;
 }
