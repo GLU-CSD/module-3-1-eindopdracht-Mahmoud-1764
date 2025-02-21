@@ -15,7 +15,7 @@
 }
 
 body {
-background-color: white;
+  background-color: white;
 }
 
 #header {
@@ -250,9 +250,10 @@ header {
   display: flex;
   justify-content: center;
   /* align-items: center; */
-  background-color: rgb(68, 68, 68);
+  /* background-color: rgb(68, 68, 68); */
+  background-image: linear-gradient(rgb(68, 68, 68), rgb(255, 255, 255));
   width: 260px;
-  height: 900;
+  height: auto;
   padding-right: 5px;
 }
 
@@ -260,7 +261,7 @@ header {
 .speceidication {
   font-family: 'Poppons', sans-serif;
   width: 100%;
-  height: 150px;
+  height: auto;
   text-align: center;
   color: white;
   display: flex;
@@ -268,7 +269,7 @@ header {
   margin-top: 50px;
 }
 
-.Max-Min{
+.Max-Min {
   height: 70%;
 }
 
@@ -319,7 +320,7 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 15px;
 }
 
-.slider {
+/* .slider {
   height: 5px;
   border-radius: 5px;
   background: white;
@@ -329,24 +330,34 @@ input[type="number"]::-webkit-outer-spin-button {
   left: 25%;
   right: 25%;
   border-radius: 5px;
-  background: rgba(0, 198, 255, 255);;
+  background: rgba(0, 198, 255, 255);
+} */
+.between-nav {
+  margin-top: 50px;
+  height: 1px;
+  background-color: rgba(0, 198, 255, 255);
+
 }
 
+.brand-container {
+  margin-top: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
 
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  margin-top: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.radio {
+  margin-top: 5px;
+  font-size: 15px;
+}
 
 .main {
   width: 100%;
@@ -364,55 +375,100 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   flex-wrap: wrap;
 }
-.Naame-product{
+
+.Naame-product {
   width: 100%;
   height: 39px;
   display: flex;
   align-items: end;
   flex-wrap: wrap;
 }
-.text{
+
+.text {
   width: 100%;
   display: flex;
-  font-family:"LEMONMILK" ;
+  font-family: "LEMONMILK";
 }
 
-.between{
+.between {
   width: 100%;
   height: 1px;
   background-color: black;
 }
-.photo-product{
+
+.photo-product {
   width: 300px;
   height: 239px;
 }
-.photo-product img{
+
+.photo-product img {
   width: 100%;
   height: 100%;
 }
-.specofocation-product{
+
+.specofocation-product {
   width: 700px;
   height: 279;
   display: flex;
   flex-wrap: wrap;
 }
-.end-line{
+
+.end-line {
   height: 1px;
   background-color: black;
 }
-.betweenphoto-product{
+
+.betweenphoto-product {
   width: 1px;
   height: 100%;
   background-color: black;
 }
-.text-specofocation1{
-  background-color:   rgba(172, 172, 172, 0.173);
+
+.text-specofocation1 {
+  background-color: rgba(172, 172, 172, 0.173);
   width: 100%;
   height: 40px;
 }
-.text-specofocation2{
+
+.text-specofocation2 {
   background-color: rgb(255, 255, 255);
   width: 100%;
   height: 40px;
 }
 
+.footer {
+  background-color: rgb(68, 68, 68);
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+
+.information {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.information h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  color: white;
+  margin-top: 10px;
+  align-items: center;
+}
+.information h2:hover{
+  color: rgba(0, 198, 255, 255);
+}
+
+.information a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  font-family: "LEMONMILK";
+  font-size: 10px;
+}
+
+.information a:hover{
+  color: rgba(0, 198, 255, 255);
+}
