@@ -250,8 +250,7 @@ header {
   display: flex;
   justify-content: center;
   /* align-items: center; */
-  /* background-color: rgb(68, 68, 68); */
-  background-image: linear-gradient(rgb(68, 68, 68), rgb(255, 255, 255));
+  background-color: rgb(68, 68, 68);
   width: 260px;
   height: auto;
   padding-right: 5px;
@@ -304,7 +303,6 @@ header {
   font-size: 16px;
   font-weight: 150;
   color: rgba(0, 198, 255, 255);
-  ;
   outline: none;
   text-align: center;
   border-radius: 5px;
@@ -370,10 +368,11 @@ input[type="number"]::-webkit-outer-spin-button {
 
 #product-container {
   margin-top: 50px;
-  width: 1000px;
+  width: 80%;
   height: 280px;
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .Naame-product {
@@ -407,10 +406,11 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .specofocation-product {
-  width: 700px;
-  height: 279;
+  width: 80%;
+  height: 279px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
 }
 
 .end-line {
@@ -427,13 +427,66 @@ input[type="number"]::-webkit-outer-spin-button {
 .text-specofocation1 {
   background-color: rgba(172, 172, 172, 0.173);
   width: 100%;
-  height: 40px;
+  height: 35px;
+  display: flex;
+  align-items: end;
+}
+
+#Merk {
+  width: 40%;
+  display: flex;
+  align-items: end;
+  font-size: 23px;
+  margin-left: 5px;
+}
+
+#name {
+  width: 60%;
+  display: flex;
+  align-items: end;
+  font-size: 20px;
 }
 
 .text-specofocation2 {
   background-color: rgb(255, 255, 255);
   width: 100%;
-  height: 40px;
+  height: 35px;
+
+  display: flex;
+  align-items: end;
+}
+
+.price {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  width: 40%;
+  display: flex;
+  align-items: end;
+}
+
+.button {
+  width: 60%;
+  display: flex;
+  justify-content: right;
+  align-items: end;
+}
+
+.Buynow {
+  background-color: rgb(68, 68, 68);
+  width: 100px;
+  height: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: bold;
+  transition: 0.3s;
+}
+
+.Buynow:hover {
+  background-color: rgba(0, 198, 255, 255);
 }
 
 .footer {
@@ -457,7 +510,8 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: 10px;
   align-items: center;
 }
-.information h2:hover{
+
+.information h2:hover {
   color: rgba(0, 198, 255, 255);
 }
 
@@ -469,6 +523,6 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 10px;
 }
 
-.information a:hover{
+.information a:hover {
   color: rgba(0, 198, 255, 255);
 }
