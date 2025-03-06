@@ -1,0 +1,342 @@
+@font-face {
+  font-family: "japanes";
+  src: url(/assets/fonts/HIROMISAKE.ttf);
+}
+
+@font-face {
+  font-family: "LEMONMILK";
+  src: url(/assets/fonts/LEMONMILK-Medium.otf);
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+#header {
+  height: 100px;
+  width: 100%;
+  top: 0;
+  box-shadow: 00px 1px 5px black;
+}
+
+header {
+  background-color: rgb(68, 68, 68);
+  display: grid;
+  grid-template-areas: "left center right";
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 100px;
+  height: 100px;
+  width: 100%;
+}
+
+.left {
+  grid-area: left;
+}
+
+.center {
+  grid-area: center;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 16.6625px 16.6625px 16.6625px 16.6625px 16.6625px 16.6625px;
+}
+
+.right {
+  grid-area: right
+}
+
+.hdr_upcontanier {
+  grid-row: 1/3;
+  grid-column: 1/4;
+  display: flex;
+  align-items: center;
+  font-family: "LEMONMILK";
+  color: rgb(212, 212, 212);
+  font-size: 12px;
+}
+
+.text {
+  display: flex;
+  margin-left: 3%;
+}
+
+.text-p {
+  margin-left: 4px;
+}
+
+.hdr_logo {
+  grid-row: 3/7;
+  grid-column: 1/2;
+}
+
+.hdr_serchbar {
+  grid-row: 3/7;
+  grid-column: 2/3;
+}
+
+.hdr_account {
+  grid-row: 3/7;
+  grid-column: 3/4;
+}
+
+#mainlogo {
+  width: 250px;
+  height: 50px;
+  margin-top: 9px;
+
+}
+
+.hdr_divivder {
+  background-color: aliceblue;
+  height: 1px;
+  grid-row: 3/3;
+  grid-column: 1/4;
+}
+
+.hdr_serchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 580px;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+}
+
+.serch {
+  display: flex;
+}
+
+#searchfieldinput {
+  border-radius: 10px;
+  width: 540px;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+
+.magnifying_icon {
+  background-color: rgba(0, 198, 255, 255);
+  height: 30px;
+  /* Set the height of the container */
+  width: 40px;
+  /* Set the width of the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#magnifying {
+  height: 20px;
+  /* Set the size of the magnifying icon */
+  width: 20px;
+  /* Adjust the width of the magnifying icon */
+}
+
+.hdr_account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 150px;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.account:hover {
+  color: rgba(0, 198, 255, 255);
+}
+
+.account-text {
+  font-family: "LEMONMILK";
+  color: white;
+  margin-right: 8px;
+  font-size: large;
+}
+
+.nother-logos {
+  margin-right: 0px;
+}
+
+.shop-logo {
+  margin-left: 25px;
+}
+
+#heart {
+  color: white;
+  transition: 0.3s ease;
+}
+
+#heart:hover {
+  color: rgba(0, 198, 255, 255);
+}
+
+#shopping-cart {
+  color: white;
+  transition: 0.3s ease;
+}
+
+#shopping-cart:hover {
+  color: rgba(0, 198, 255, 255);
+}
+
+.formulier-container {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+.mid-side {
+  width: 100%;
+  height: auto;
+}
+.container2{
+  width: 100%;
+  height: 5%;
+  display: flex;
+}   
+
+.label {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 30%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 30px;
+  font-size: 17px;
+}
+
+.input-vakjes {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#Voornaam {
+  height: 20px;
+  width: 130px;
+}
+
+#tussenv {
+  height: 20px;
+  width: 60px;
+}
+
+#Achternaam {
+  height: 20px;
+  width: 130px;
+}
+
+#Postcode {
+  height: 20px;
+  width: 70px;
+}
+
+#Nr {
+  height: 20px;
+  width: 50px;
+}
+
+#Toev {
+  height: 20px;
+  width: 40px;
+  margin-left: 5px;
+}
+
+#Country {
+  height: 20px;
+  width: 130px;
+}
+
+#bovenstaandadres {
+  margin-left: 5px;
+}
+
+#adres2 {
+  margin-left: 5px;
+}
+
+#anderadres {
+  margin-left: 5px;
+}
+
+#email {
+  height: 20px;
+  width: 250px;
+}
+
+#Teleoonnummer {
+  height: 20px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+#verpakking {
+  width: 150px;
+}
+
+.p {
+  height: 20px;
+}
+
+.down-side {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-container {
+  background-color: rgb(213, 213, 213);
+  width: 500px;
+  height: 40px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 25px;
+}
+
+#verder {
+  margin-right: 5px;
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+  color: white;
+  background-color: rgb(0, 226, 0);
+  border: none;
+}
+
+#form {
+  width: auto;
+  height: auto;
+}
+
+#tussenv {
+  margin-left: 5px;
+}
+
+#Achternaam {
+  margin-left: 5px;
+} 

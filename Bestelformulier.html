@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bestelformulier</title>
+  <link rel="stylesheet" href="/assets/css/Bestelformulier.css"/>
+  <script src="https://kit.fontawesome.com/5701e06e25.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+  <section id="header">
+    <header>
+      <div class="left"></div>
+      <div class="center">
+        <div class="hdr_upcontanier">
+          <div class="text">
+            <div class="logo"><i class='fas fa-shipping-fast' style='font-size:12px;color:rgba(0,198,255,255)'></i>
+            </div>
+            <div class="text-p">
+              <p>Express delivery</p>
+            </div>
+          </div>
+          <div class="text">
+            <div class="logo"><i class='fas fa-clock' style='font-size:12px;color:rgba(0,198,255,255)'></i></div>
+            <div class="text-p">
+              <p>Open 24/7 - Always Here for You!</p>
+            </div>
+          </div>
+          <div class="text">
+            <div class="logo"><i class='fas fa-bolt' style='font-size:12px;color:rgba(0,198,255,255)'></i></div>
+            <div class="text-p">
+              <p>Powering Your PC Experience with Premium Components.</p>
+            </div>
+          </div>
+          <div class="text">
+            <div class="logo"><i class='fas fa-shield-alt' style='font-size:12px;color:rgba(0,198,255,255)'></i></div>
+            <div class="text-p">
+              <p>Your Privacy, Our Priority – 100% Safe Transactions!</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="hdr_divivder"></div>
+        <div class="hdr_logo">
+          <img src="/assets/img/logo_00000.png" alt="mainlogo" id="mainlogo" />
+        </div>
+        <div class="hdr_serchbar">
+          <div class="container">
+            <div class="serch">
+              <form>
+                <input type="search" id="searchfieldinput" placeholder="Search here">
+              </form>
+            </div>
+            <div class="magnifying_icon">
+              <img src="/assets/img/Magnifying_icon.png" alt="zoeken" id="magnifying" />
+            </div>
+          </div>
+        </div>
+        <div class="hdr_account">
+          <div class="account">
+            <div class="account-text">
+              <p>Account</p>
+            </div>
+            <div class="account-logo">
+              <i class='fas fa-user-alt' style='font-size:24px;color:rgb(255, 255, 255)'></i>
+            </div>
+          </div>
+          <div class="nother-logos"></div>
+          <div class="heard-logo"><a href="">
+              <i class='fas fa-heart' style='font-size:24px' id="heart"></i>
+            </a>
+          </div>
+          <div class="shop-logo">
+            <a href="">
+              <i class='fas fa-shopping-cart' style='font-size:24px' id="shopping-cart"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="right"></div>
+    </header>
+  </section>
+   <div class="formulier-container">
+    <form action="" method="" id="form">
+      <div class="mid-side">
+        <div class="container2">
+          <div class="label">
+            Type bestling
+          </div>
+          <div class="input-vakjes">
+            <input type="radio" name="particuler" id="particuler">
+            <label for="particuler"> particuler</label>
+            <input type="radio" name="Zakelijk" id="Zakelijk">
+            <label for="particuler"> Zakelijk</label>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="label">
+            Anhef
+          </div>
+          <div class="input-vakjes">
+            <input type="radio" name="Dhr." id="Dhr.">
+            <label for="Dhr."> Dhr.</label>
+            <input type="radio" name="Mevr." id="Mevr.">
+            <label for="Mevr."> Mevr.</label>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="label">
+            Naam
+          </div>
+          <div class="input-vakjes">
+            <input type="text" name="Voornaam" id="Voornaam" placeholder="Voornaam" required>
+            <input type="text" name="tussenv" id="tussenv" placeholder="Tussenv.">
+            <input type="text" name="Achternaam" id="Achternaam" placeholder="Achternaam">
+          </div>
+        </div>
+        <div class="container2">
+          <div class="label">
+            Postcode
+          </div>
+          <div class="input-vakjes">
+            <input type="text" name="Postcode" id="Postcode" placeholder="1234AB" required>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="label">
+            Huisnummer
+          </div>
+          <div class="input-vakjes">
+            <input type="text" name="Nr" id="Nr" placeholder="Nr." required>
+            <input type="text" name="Toev" id="Toev" placeholder="Toev.">
+          </div>
+        </div>
+        <div class="container2">
+          <div class="label">
+            Land
+          </div>
+          <div class="input-vakjes">
+            <input type="text" name="Country" id="Country" list="Countries" required>
+            <datalist id="Countries">
+              <option value="Asutralia"></option>
+              <option value="Canada"></option>
+              <option value="Germany"></option>
+              <option value="France"></option>
+              <option value="Netherland"></option>
+              <option value="United Kingdom"></option>
+              <option value="United States"></option>
+            </datalist>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="label">
+            Afleveradres
+          </div>
+          <div class="input-vakjes">
+            <input type="radio" name="adres1" id="adres1">
+            <label for="adres1" id="bovenstaandadres"> Op bovenstaand adres bezorgen</label>
+            <input type="radio" name="adres2" id="adres2">
+            <label for="adres2" id="anderadres"> Op ander adres bezorgen</label>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="label">
+            E-mailadres
+          </div>
+          <div class="input-vakjes">
+            <input type="email" name="email" id="email" required>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="label">
+            Teleoonnummer
+          </div>
+          <div class="input-vakjes">
+            <input type="number" name="Teleoonnummer" id="Teleoonnummer" required>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="label">
+            Geboortedatum
+          </div>
+          <div class="input-vakjes">
+            <input type="date" name="Geboortedatum" id="Geboortedatum">
+          </div>
+        </div>
+        <div class="container2">
+          <div class="label">
+            Nieuwsbrief
+          </div>
+          <div class="input-vakjes">
+            <input type="radio" name="adres1" id="adres1">
+            <label for="adres1" id="bovenstaandadres"> Ja,ik wil de Coolblue-nieuwsbrief met $5,-cadeaubon voor<p> mijn
+                volgende bestelling</p></label>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="label">
+            Kleur verpakking
+          </div>
+          <div class="input-vakjes">
+            <input type="color" name="verpakking" id="verpakking">
+          </div>
+        </div>
+        <div class="container2">
+          <div class="label">
+            Wachtwoord
+          </div>
+          <div class="input-vakjes">
+            <input type="password" name="Wachtwoord" id="Wachtwoord" required>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="label">
+            Wachtwoord bevestingen
+          </div>
+          <div class="input-vakjes">
+            <input type="password" name="Wachtwoord" id="Wachtwoord" required>
+          </div>
+        </div>
+      </div>
+      <div class="down-side">
+        <div class="button-container">
+          <input type="submit" value="verder" id="verder">
+        </div>
+      </div>
+    </form>
+  </div>
+  
+</body>
+</html>
