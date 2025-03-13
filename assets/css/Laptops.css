@@ -184,7 +184,7 @@ header {
   display: flex;
 }
 
-#winkelmandItems{
+#winkelmandItems {
   margin-left: 20px;
   color: white;
   font-family: "LEMONMILK";
@@ -324,6 +324,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .field span {
   font-size: 15px;
 }
+
 .between-nav {
   margin-top: 50px;
   height: 1px;
@@ -532,9 +533,11 @@ input[type="number"]::-webkit-outer-spin-button {
   .Merk {
     font-size: 20px;
   }
+
   .name {
     font-size: 15px;
   }
+
   .hdr_upcontanier {
     font-size: 8px;
   }
@@ -546,11 +549,12 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 50%;
     height: 30px;
   }
+
   .photo-product {
     width: 150px;
     height: 100px;
   }
-  
+
   .photo-product img {
     width: 100%;
     height: 100%;
@@ -559,7 +563,15 @@ input[type="number"]::-webkit-outer-spin-button {
   .Merk {
     font-size: 10px;
   }
+
   .name {
     font-size: 5px;
   }
+}
+
+#range {
+  margin-top: 30px;
+  -webkit-appearance: none;
+  background-color: rgba(0, 198, 255, 255);
+  border-radius: 5px;
 }
